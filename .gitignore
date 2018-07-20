@@ -1,0 +1,16 @@
+/.metadata/
+*/metadata/
+*.metadata
+metadata
+RemoteSystemsTempFiles
+.project
+.log
+target
+*.classpath
+.cache
+*.settings
+build
+!.gitignore
+lib
+/bin
+/target
