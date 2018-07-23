@@ -7,4 +7,12 @@
   	<version>0.0.1-SNAPSHOT</version>
   	<relativePath>../spring-security</relativePath>
   </parent>
+  
+   <dependencies>
+  	<dependency>
+  		<groupId>com.demo.security</groupId>
+  		<artifactId>spring-security-core</artifactId>
+  		<version>${demo.security.version}</version>
+  	</dependency>
+  </dependencies>
 </project>

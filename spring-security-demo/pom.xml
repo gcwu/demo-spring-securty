@@ -7,4 +7,34 @@
   	<version>0.0.1-SNAPSHOT</version>
   	<relativePath>../spring-security</relativePath>
   </parent>
+  
+   <dependencies>
+  	<dependency>
+  		<groupId>com.demo.security</groupId>
+  		<artifactId>spring-security-core</artifactId>
+  		<version>${demo.security.version}</version>
+  	</dependency>
+  	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+		</dependency>
+  </dependencies>
+  
+  <build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>1.3.3.RELEASE</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+		<finalName>demo</finalName>
+	</build>
 </project>
