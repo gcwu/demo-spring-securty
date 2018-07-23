@@ -14,6 +14,12 @@
   		<artifactId>spring-security-core</artifactId>
   		<version>${demo.security.version}</version>
   	</dependency>
+  	
+  	<dependency>
+  		<groupId>com.demo.security</groupId>
+  		<artifactId>spring-security-browser</artifactId>
+  		<version>${demo.security.version}</version>
+  	</dependency>
   	<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
