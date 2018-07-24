@@ -1,5 +1,6 @@
 package com.demo.security.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -16,6 +17,7 @@ public class BrowserConfig extends WebSecurityConfigurerAdapter{
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
+	@Autowired
 	private SecurityProperties securityProperties;
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
